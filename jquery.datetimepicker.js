@@ -1014,6 +1014,10 @@
 						case 'destroy':
 							destroyDateTimePicker($(this));
 						break;
+						case 'empty':
+							$(this).val(null);
+							datetimepicker.data('xdsoft_datetime').empty();
+						break;
 						case 'reset':
 							this.value = this.defaultValue;
 							if(!this.value || !datetimepicker.data('xdsoft_datetime').isValidDate(Date.parseDate(this.value, options.format)))
