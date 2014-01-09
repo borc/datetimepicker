@@ -13,6 +13,7 @@
 	padding-top: 2px;
 	position: absolute;
 	z-index: 9999;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	display:none;
 }
@@ -239,6 +240,9 @@
 .xdsoft_datetimepicker  .xdsoft_calendar td.xdsoft_disabled,
 .xdsoft_datetimepicker  .xdsoft_time_box >div >div.xdsoft_disabled{
 	opacity:0.5;
+}
+.xdsoft_datetimepicker  .xdsoft_calendar td.xdsoft_other_month.xdsoft_disabled{
+	opacity:0.2;
 }
 .xdsoft_datetimepicker  .xdsoft_calendar td:hover,
 .xdsoft_datetimepicker  .xdsoft_timepicker .xdsoft_time_box >div >div:hover{
